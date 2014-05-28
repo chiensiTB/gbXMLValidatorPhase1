@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml;
+using System.Xml.XPath;
 using System.Text.RegularExpressions;
 using VectorMath;
 using System.Web;
@@ -823,6 +824,8 @@ namespace DOEgbXML
 
             return ipdoc;
         }
+
+       
 
         #region Test Functions
         private DOEgbXMLReportingObj GetUGSurfaceCount(List<XmlDocument> gbXMLDocs, List<XmlNamespaceManager> gbXMLnsm, DOEgbXMLReportingObj report, string Units)
